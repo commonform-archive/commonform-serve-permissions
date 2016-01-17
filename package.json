@@ -1,0 +1,27 @@
+{
+  "name": "commonform-serve-permissions",
+  "description": "serve API permissions data",
+  "version": "0.0.0",
+  "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
+  "dependencies": {
+    "bcrypt-password": "^1.0.2",
+    "uuid": "^2.0.1"
+  },
+  "devDependencies": {
+    "bole": "^2.0.0",
+    "levelup": "^1.3.1",
+    "memdown": "^1.1.1",
+    "tape": "^4.4.0"
+  },
+  "files": [
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "index.js"
+  ],
+  "license": "Apache-2.0",
+  "repository": "commonform/commonform-serve-permissions",
+  "scripts": {
+    "test": "tape test/*.test.js"
+  }
+}
