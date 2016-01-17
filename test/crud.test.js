@@ -6,6 +6,18 @@ var tape = require('tape')
 
 tape('Actions', function(test) {
 
+  test.test('No Action', function(test) {
+    test.plan(1)
+    server(function(port, done) {
+      var request = { method: 'POST', port: port }
+      http.request(request, function(response) {
+        response.pipe(concat(function(buffer) {
+          var output = JSON.parse(buffer)
+          test.equal(output.error, 'Invalid action', 'Error')
+          done()
+          test.end() })) })
+      .end() }) })
+
   test.test('Check', function(test) {
 
     test.test('Check Bad Credentials', function(test) {
