@@ -13,7 +13,7 @@ tape('Actions', function(test) {
       http.request(request, function(response) {
         response.pipe(concat(function(buffer) {
           var output = JSON.parse(buffer)
-          test.equal(output.error, 'Invalid action', 'Error')
+          test.equal(output.error, 'Invalid request', 'Error')
           done()
           test.end() })) })
       .end() }) })
