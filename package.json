@@ -1,7 +1,7 @@
 {
   "name": "commonform-serve-permissions",
   "description": "serve API permissions data",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "dependencies": {
     "bcrypt-password": "^1.0.2",
